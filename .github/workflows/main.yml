@@ -18,7 +18,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Store API key in .env file
-        run: echo "REACT_APP_API_KEY=${{ secrets.API_KEY }}" >> .env
+        run: echo "REACT_APP_API_KEY=${{ secrets.AIzaSyAmtWVbJzoLjT7DXrzD2_yA_VerM_ozIow }}" >> .env
       - name: Build
         run: npm run build
       - name: Install serve
@@ -26,4 +26,4 @@ jobs:
       - name: Deploy
         run: npm run deploy
         env:
-          REACT_APP_API_KEY: ${{ secrets.API_KEY }}
+          REACT_APP_API_KEY: ${{ secrets.AIzaSyAmtWVbJzoLjT7DXrzD2_yA_VerM_ozIow }}
