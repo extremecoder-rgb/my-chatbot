@@ -2,7 +2,8 @@
 
 Unmesh GPT is an open-source AI chat bot powered by Google's Generative AI. Engage in dynamic conversations, ask questions, and receive intelligent responses.
 
-//image
+![image](https://github.com/user-attachments/assets/3c932923-a94e-416d-a12d-615f094cda95)
+
 
 ## Features
 
