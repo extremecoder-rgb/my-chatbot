@@ -1,0 +1,206 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.right-heading {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.right-heading h1 {
+  font-size: 3vw;
+  color: #333;
+  margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 620px) {
+  .right-heading {
+    position: relative;
+    display: flex;
+    align-items: center;
+    left: -2vh;
+  }
+  .right-heading h1 {
+    font-size: 5vw;
+  }
+}
+
+.chat-container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 800px;
+  overflow-y: auto;
+  height: 60vh;
+}
+
+.user-message {
+  background-color: #d3f1f1;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.gemini-message {
+  background-color: #f1f1f1;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 5px;
+}
+
+.input-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.send-button {
+  position: absolute;
+  top: 50%;
+  right: 1px;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  height: 10vh;
+  width: 50vw;
+  padding: 8px;
+  background-color: transparent;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  overflow-y: hidden;
+  max-height: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  textarea {
+    width: 70vw;
+  }
+  .chat-container {
+    width: 80vw;
+  }
+}
+
+.error-message {
+  background-color: #ffcccc;
+  color: #ff0000;
+  padding: 8px;
+  margin: 4px;
+  border-radius: 5px;
+}
+.code-block {
+  position: relative;
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  transition: ease 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #555;
+}
+.copy-button:active {
+  scale: 0.9;
+}
+
+footer {
+  padding-top: 1rem;
+}
+.custom-footer {
+  width: 100%;
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 280px;
+}
+
+.footer-icon {
+  color: #718096;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.2s ease;
+}
+
+.footer-icon:hover,
+.copyright a:hover {
+  color: rgb(16, 15, 15);
+}
+
+.copyright {
+  position: sticky;
+  text-align: center;
+  color: #a0aec0;
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+.github-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.github-button a {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  color: #333333;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.github-button a:hover {
+  background-color: #dfdfdf;
+}
+@media only screen and (max-width: 700px) {
+  .github-button a {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.copyright a {
+  color: #718096;
+  text-decoration: none;
+}
