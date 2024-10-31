@@ -83,7 +83,7 @@ const App = () => {
     <div className="app">
       <div className="right-heading">
         <a href="https://twitter.com/Unmesh100" target='blank' className="footer-icon">
-          <h1>Gemini GPT</h1>
+          <h1>Unmesh GPT</h1>
         </a></div>
       <div className="github-button">
         <a href="https://github.com/Unmesh100/Unmesh-GPT" target="blank">  <CiStar />Star this Repo</a>
