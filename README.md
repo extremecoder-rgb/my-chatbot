@@ -46,9 +46,6 @@ If you'd like to contribute to Unmesh GPT, follow these steps:
    `git push origin feature/new-feature`
 5. Open a pull request
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
