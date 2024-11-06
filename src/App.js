@@ -6,6 +6,7 @@ import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { IoMdSend } from "react-icons/io";
 import { CiStar } from "react-icons/ci";
 import ParticleNebula from './ParticleNebula';
+import "./index.css";
 import "./App.css";
 
 const App = () => {
@@ -91,7 +92,6 @@ const App = () => {
       <div className="particle-background">
         <ParticleNebula />
       </div>
-      <div className="content-overlay">
         <div className="right-heading">
           <a href="https://twitter.com/Unmesh100" target='blank' className="footer-icon">
             <h1>Unmesh GPT</h1>
@@ -102,6 +102,7 @@ const App = () => {
             <CiStar />Star this Repo
           </a>
         </div>
+        <div className="content-overlay">
         <div className="chat-container">
           <div className="scrollable-content" ref={scrollRef}>
             {conversation.map((message, index) => (
@@ -182,7 +183,7 @@ const App = () => {
           </footer>
         </div>
       </div>
-    </div>
+  </div>
   );
 };
 
